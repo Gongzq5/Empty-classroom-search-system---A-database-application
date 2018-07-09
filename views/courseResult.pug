@@ -1,0 +1,69 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    |
+    link(href="stylesheets/resultPage.css", rel="stylesheet")
+    |
+    script(type="text/javascript", src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js")
+    |     
+    script(type="text/javascript", src="javascripts/resultPage.js")
+    |     
+    script(src="http://lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js")
+    |
+    title 查询结果 
+  
+  body
+    #main
+    |
+    #topbar
+      span#logo_s 空闲教室查询
+      |       
+      span#usernameShow
+      |       
+      button#logout 登出
+    |     
+    |     
+    br
+    br
+    br
+    |     
+    |
+    #logo
+      //- img(src="images/logo.jpg")
+    |
+    table(border='1' id='showTable')
+      caption(id='tableTile') 查询结果
+      |
+      tr.titleRow
+        th 名称
+        |
+        th 课室
+        |
+        th 开始周数
+        |
+        th 结束周数
+        |
+        th 时间
+        |
+        th 开始节数
+        |
+        th 结束节数
+        |
+      each dt in data
+        tr.dataRow
+          td #{dt.NAME}
+          |
+          td #{dt.CLASSROOM}
+          |
+          td #{dt.WEEK_BEGIN}
+          |
+          td #{dt.WEEK_END}
+          |
+          td #{dt.DOW}
+          |
+          td #{dt.CLASS_BEGIN}
+          |
+          td #{dt.CLASS_END}
+      |
+    |

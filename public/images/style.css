@@ -1,0 +1,46 @@
+body{
+  background-color: #005825;
+  color: white;
+  font-family: "Verdana", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#logo{
+  text-align: center;
+}
+
+table{
+  text-align: center;
+  border: 2px grey solid;
+  width: 700px;
+  margin: auto;
+}
+
+caption{
+  font-family: "Verdana", Tahoma, sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+th td{
+  font-size: 15pt;
+}
+
+tr{
+  height: 50px;
+}
+
+#classroom{
+  width: 150px;
+}
+
+#time{
+  width: 250px;
+}
+
+#others{
+  width: 300px;
+}

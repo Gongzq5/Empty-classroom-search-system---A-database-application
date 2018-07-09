@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Log as administer
+    link(rel='stylesheet', href='/stylesheets/administerSignUp.css')
+    script(type='text/javascript', src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js')
+    script(type='text/javascript', src='javascripts/administerSignUp.js')
+  body
+    div(id='main')
+      p(id='regist') 注册
+      hr
+      form(method='post', id='info')
+        label 用户名：
+          input(name='username')
+        p(class='demand gray', id='userName') 用户名6~18位英文字母、数字或下划线，必须以英文字母开头
+        label 密码：
+          input(type='password' name='password')
+        p(class='demand gray', id='password') 密码由英文字符组成
+        label 重复密码：
+          input(type='password' name='passwordRepeat')
+        p(class='demand gray', id='passwordRepeat') 和上述密码相同
+        label 手机号：
+          input(name='phoneNumber')
+        p(class='demand gray', id='phoneNumber') 电话11位数字，不能以0开头
+        
+        input(id='submit', type='submit', name='submit')
+        input(id='reset', type='reset', name='reset')
+      p
+        a(href='/') 有账号啦！这就去登录
+      div(id='hint')

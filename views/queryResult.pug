@@ -1,0 +1,114 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    |
+    link(href="stylesheets/resultPage.css", rel="stylesheet")
+    |
+    script(type="text/javascript", src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js")
+    |     
+    script(type="text/javascript", src="javascripts/resultPage.js")
+    |     
+    script(src="http://lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js")
+    |
+    title 查询结果 
+  
+  body
+    #main
+    |
+    #topbar
+      span#logo_s 空闲教室查询
+      |       
+      span#usernameShow
+      |       
+      button#logout 登出
+    |     
+    |     
+    br
+    br
+    br
+    |     
+    |
+    #logo
+      //- img(src="images/logo.jpg")
+    |
+    button#changeShowFunc 切换显示方式
+    |
+    table(border='1' id='showTable')
+      caption(id='tableTile') 查询结果
+      |
+      tr.titleRow
+        th NAME
+        |
+        th DOW
+        |
+        th CLASS_BEGIN
+        |
+        th CLASS_END
+        |
+      each dt in data
+        tr.dataRow
+          td #{dt.NAME}
+          |
+          td #{dt.DOW}
+          |
+          td #{dt.CLASS_BEGIN}
+          |
+          td #{dt.CLASS_END}
+      |
+    |
+    table(border='1' id='otherShowTable' hidden)
+      caption(id='tableTile') 查询结果
+      |
+      tr.titleRow
+        th#classroom
+          | NAME
+        |                     
+        th
+          | DOW
+        |                     
+        th#J1.J
+          | 1
+        |                     
+        th#J2.J
+          | 2
+        |                     
+        th#J3.J
+          | 3
+        |                     
+        th#J4.J
+          | 4
+        |                     
+        th#J5.J
+          | 5
+        |                     
+        th#J6.J
+          | 6
+        |                     
+        th#J7.J
+          | 7
+        |                     
+        th#J8.J
+          | 8
+        |                     
+        th#J9.J
+          | 9
+        |                     
+        th#J10.J
+          | 10
+        |                     
+        th#J11.J
+          | 11
+      |
+      - arr = [1,2,3,4,5,6,7,8,9,10,11]
+      each dt in data
+        tr.dataRow
+          td #{dt.NAME}
+          |
+          td #{dt.DOW}
+          |
+          each i in arr
+            if( dt.CLASS_BEGIN <= i && dt.CLASS_END >= i)
+              td.blue
+            else
+              td.green

@@ -1,0 +1,95 @@
+body{
+  color: black;
+  font-family: "Verdana", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+div#main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: url('../images/DXYPic.jpg') repeat-y center scroll;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#logo{
+  text-align: center;
+}
+
+table{
+  text-align: center;
+  border: 2px black solid;
+  width: 700px;
+  margin: auto;
+  z-index: 1;
+}
+
+#topbar {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background: green;
+  color: white;
+}
+
+span {
+  display: inline-block;
+  font-size: 15pt;
+  font-family: "楷体";
+  margin: 10px 10px;
+}
+
+#logout {
+  border-radius: 50%;
+  float: right;
+  margin: 10px 20px;
+}
+
+caption{
+  font-family: "Verdana", Tahoma, sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+th td{
+  font-size: 15pt;
+}
+
+tr{
+  height: 50px;
+}
+
+.J {
+  width: 40px;
+}
+
+#changeShowFunc {
+  position: fixed;
+  right: 20%;
+  width: 100px;
+  height: 100px;
+  color: white;
+  border-radius: 20%;
+  background-color: #005825;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530500184829&di=b4775f945c3fdc8cb653e8ec6b142243&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4a36acaf2edda3cce7935f060ae93901213f92a5.jpg');
+  background-repeat: no-repeat;
+  background-size: 120% 120%;
+  background-position: -9px -9px;
+  box-shadow: 2px 2px 3px #888888;
+  outline: none;
+}
+
+.green {
+  background-color: none;
+}
+
+.blue {
+  background-color: green;
+}

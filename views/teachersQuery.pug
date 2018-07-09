@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    |     
+    title  空闲教室查询系统 
+    |     
+    link(href="stylesheets/SearchingPage.css", rel="stylesheet")
+    |     
+    script(type="text/javascript", src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js")
+    |     
+    script(type="text/javascript", src="javascripts/teachersQuery.js")
+    |     
+    script(src="http://lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js")
+  |   
+  body
+    #main
+    |
+    #topbar
+      span#logo_s 空闲教室查询系统
+      |       
+      span#usernameShow
+      |       
+      button#logout 登出
+    |     
+    |     
+    br
+    br
+    br
+    |     
+    |     
+    #logo
+    |     
+    form#content(method="get")
+      h3 查询课程
+      hr
+      .row
+        label 输入课程名字
+        |
+        input(type='text', name='courseName')
+      |
+      input(type="submit")
+      |       
+      input(type="reset")

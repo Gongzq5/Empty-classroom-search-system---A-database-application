@@ -1,0 +1,18 @@
+body {
+	width: 176px;
+	margin: auto;
+	font-family: STHeiti-Light;
+	text-align: center;
+}
+
+p {
+	color: red;
+}
+
+button {
+	border: 1px show;	
+	background: lightblue;
+	display: inline-block;	
+	margin: 5px auto;
+	width: 120px;
+}

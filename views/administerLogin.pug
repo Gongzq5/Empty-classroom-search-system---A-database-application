@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Log as administer
+    link(rel='stylesheet', href='/stylesheets/administerSignUp.css')
+    script(type='text/javascript', src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js')
+    script(type='text/javascript', src='javascripts/administerLogin.js')
+  body(cz-shortcut-listen='true')
+    #main
+      p#regist 登陆
+      br
+      hr
+      form#info(method='post')
+        label
+          | 用户名：
+          input(name='username')
+        p#userName.demand.gray 用户名6~18位英文字母、数字或下划线，必须以英文字母开头
+        label
+          | 密码：
+          input(type='password', name='password')
+        p#studentId.demand.gray 请输入8位密码
+        input#submit(type='submit', name='submit')
+        input#reset(type='reset', name='reset')
+      p
+        a(href='/signup') 没有账号？现在注册吧
+      p
+        a(href='/') 回到主页
+      #hint

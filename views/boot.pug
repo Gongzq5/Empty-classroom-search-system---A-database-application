@@ -1,0 +1,96 @@
+html
+  head
+    title Home
+    link(href='stylesheets/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    // Custom Theme files
+    script(type='text/javascript', src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js')
+    script(type='text/javascript', src='../javascripts/boot.js')
+    // theme-style
+    link(href='stylesheets/boot.css', rel='stylesheet', type='text/css', media='all')
+    // //theme-style
+    script(src="http://lib.sinaapp.com/js/jquery.cookie/jquery.cookie.js")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    //- link(href='https://fonts.googleapis.com/css?family=Muli:400,300', rel='stylesheet', type='text/css')
+    //- link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+  body
+    // header
+    .header
+      .head
+        .container
+          .navbar-top
+            // Brand and toggle get grouped for better mobile display
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              .navbar-brand.logo
+                h1.animated.wow.pulse(data-wow-delay='.5s')
+                  a(href='index.html')
+                    span
+                      b E
+                    | mpty 
+                    i Classroom
+
+            // /.navbar-collapse
+          .header-left.animated.wow.fadeInLeft.animated(data-wow-delay='.5s')
+            ul
+              li
+                i.glyphicon.glyphicon-envelope
+                a(href='mailto:info@example.com') 765194873@qq.com
+              li
+                i.glyphicon.glyphicon-earphone
+                | 139 4567 8910
+          .clearfix
+      // 
+      .banner
+        .container
+          .banner-text
+            h2 Q
+          span
+            img(src='../images/li-1.png', alt='')
+          p#welcomeInfo
+            | Query the empty class room
+    // content
+    .service
+      .container
+        .ser-top
+          h3 Services
+          .ser-t
+            b
+            span
+              i
+            b.line
+        .ser-head#queryEmptyClassroom
+          .ser-grid
+            .ser-grid1
+              i.glyphicon.glyphicon-leaf  
+              h3 查询空课室
+              p 用时间、课室...来查询空课室
+        .ser-head#queryTeacherInfo
+          .ser-grid
+            .ser-grid1
+              i.glyphicon.glyphicon-user  
+              h3 查询课程信息
+              p 查看课程的上课时间和地点
+        .ser-head#gotoPeasonalPage
+          .ser-grid
+            .ser-grid1
+              i.glyphicon.glyphicon-cog  
+              h3 登录或注册
+              p 登录网页，或注册一个新的账号
+        .ser-head
+          .ser-grid
+            .ser-grid1
+              i.glyphicon.glyphicon-piggy-bank  
+              h3 联系我们
+              p 使用
+                a(href='https://mail.qq.com') QQ邮箱
+                | 联系我们
+                | 765194873@qq.com 
+        .clearfix  
