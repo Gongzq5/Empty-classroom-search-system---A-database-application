@@ -14,20 +14,20 @@ $(document).ready(()=>{
 	}
 
 	$('#queryEmptyClassroom').click(()=>{
-		$(location).attr('href', 'http://39.108.152.24:3000/query')
-	 	$(window).attr('location','http://39.108.152.24:3000/query')
-	 	$(location).prop('href', 'http://39.108.152.24:3000/query')
+		$(location).attr('href', '/query')
+	 	$(window).attr('location','/query')
+	 	$(location).prop('href', '/query')
 	})
 
 	$('#queryTeacherInfo').click(()=>{
-		$(location).attr('href', 'http://39.108.152.24:3000/teachers')
-	 	$(window).attr('location','http://39.108.152.24:3000/teachers')
-	 	$(location).prop('href', 'http://39.108.152.24:3000/teachers')
+		$(location).attr('href', '/teachers')
+	 	$(window).attr('location','/teachers')
+	 	$(location).prop('href', '/teachers')
 	})
 
 	$('#gotoPeasonalPage').click(()=>{
-		$(location).attr('href', 'http://39.108.152.24:3000/index')
-	 	$(window).attr('location','http://39.108.152.24:3000/index')
-	 	$(location).prop('href', 'http://39.108.152.24:3000/index')
+		$(location).attr('href', '/index')
+	 	$(window).attr('location','/index')
+	 	$(location).prop('href', '/index')
 	})
 })
