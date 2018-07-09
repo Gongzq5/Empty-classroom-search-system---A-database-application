@@ -37,12 +37,12 @@ app.use(async (ctx, next) => {
 })
 
 // routes
+app.use(boot.routes(), boot.allowedMethods())
 app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
 app.use(query.routes(), query.allowedMethods())
 app.use(signup.routes(), signup.allowedMethods())
 app.use(teachers.routes(), teachers.allowedMethods())
-app.use(boot.routes(), boot.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {
