@@ -13,10 +13,17 @@ SYSU 数据库课程项目
 
 ```powershell
 
+首先安装好node v8.0+（也别装v10，会有一个库无法安装）
+之后安装好npm，这个应该对版本没要求
+然后
+>> npm install
+
+最后
 >> node bin/www
 或者
 >> npm start
 
+就启动服务器啦
 ```
 
-然后浏览器访问 localhost:3000就好了
+然后浏览器访问 `localhost:3000` 就好了
