@@ -16,7 +16,7 @@ let backToLogin = () => {
 }
 
 let backToRegist = () => {
-	$(location).attr('href', 'http://39.108.152.24:3000/signup')
-	$(window).attr('location','http://39.108.152.24:3000/signup')
-	$(location).prop('href', 'http://39.108.152.24:3000/signup')
+	$(location).attr('href', '/signup')
+	$(window).attr('location','/signup')
+	$(location).prop('href', '/signup')
 }

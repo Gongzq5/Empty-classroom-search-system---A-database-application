@@ -3,9 +3,9 @@ $(document).ready(()=>{
 	if ($.cookie('logIn') == 'true') {
 		$('#usernameShow').text($.cookie('username'))
 	} else {
-		$(location).attr('href', 'http://39.108.152.24:3000/index')
-	 	$(window).attr('location','http://39.108.152.24:3000/index')
-	 	$(location).prop('href', 'http://39.108.152.24:3000/index')
+		$(location).attr('href', '/index')
+	 	$(window).attr('location','/index')
+	 	$(location).prop('href', '/index')
 	}
 
 	if ($('.dataRow').length == 0) {
@@ -34,7 +34,7 @@ let logoutClick = function() {
 	$.cookie('logIn', 'false')
 	$.cookie('username', '', {expires: -1})
 
-	$(location).attr('href', 'http://39.108.152.24:3000/')
- 	$(window).attr('location','http://39.108.152.24:3000/')
- 	$(location).prop('href', 'http://39.108.152.24:3000/')
+	$(location).attr('href', '/')
+ 	$(window).attr('location','/')
+ 	$(location).prop('href', '/')
 }
