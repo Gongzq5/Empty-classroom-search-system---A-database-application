@@ -45,7 +45,9 @@ router.post('/', async(ctx, next) => {
     }
     ctx.redirect('/')
   } else {
-    await ctx.render('WrongLogin')
+    await ctx.render('WrongLogin', {
+      'info': '可能是用户名或密码错误'
+    })
   }
 })
 
