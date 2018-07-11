@@ -4,7 +4,7 @@ const router = require('koa-router')()
 router.prefix('/signup')
 
 router.get('/', async (ctx, next) => {
-  await ctx.render('administerSignup')
+  await ctx.render('administerSignUp')
 })
 
 router.post('/', async(ctx, next) => {
